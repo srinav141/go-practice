@@ -2,6 +2,7 @@ package hamming
 
 import "errors"
 
+// Distance retruns hamming distance of 2 strings
 func Distance(a, b string) (int, error) {
 
 	if len(a) != len(b) {
