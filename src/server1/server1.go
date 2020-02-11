@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./lissagous/liss"
 	"fmt"
+	"github.com/srinav141/go-practice/src/lissagous/liss"
 	"log"
 	"net/http"
 	"strconv"
