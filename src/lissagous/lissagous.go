@@ -1,8 +1,9 @@
 package main
 
 import (
-	"./lissagous/liss"
 	"os"
+
+	"github.com/srinav141/go-practice/src/lissagous/liss"
 )
 
 func main() {
