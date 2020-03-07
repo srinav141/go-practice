@@ -3,6 +3,7 @@ package eval
 //Expr expression interface
 type Expr interface {
 	Eval(env Env) float64
+	Check(vars map[Var]bool) error
 }
 
 //Var indentifies variable
