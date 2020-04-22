@@ -1,5 +1,5 @@
 /*
-package strand implements method to converts DNA to RNA strand
+Package strand implements method to converts DNA to RNA strand
 */
 package strand
 
