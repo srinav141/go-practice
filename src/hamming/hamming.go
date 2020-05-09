@@ -1,8 +1,6 @@
-/*
-Package hamming implements a simple function
-to calculate haomming distence between two
-DNA strings
-*/
+//Package hamming implements a simple function
+//to calculate haomming distence between two
+//DNA strings
 package hamming
 
 import "errors"
