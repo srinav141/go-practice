@@ -7,6 +7,7 @@ import (
 
 func main() {
 	fmt.Println("This is varibles test main start")
+
 	var test1 int
 	fmt.Println(test1)
 	test1 = 10
