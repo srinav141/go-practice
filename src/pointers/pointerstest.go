@@ -1,14 +1,14 @@
 package main
 
-import(
-  "fmt"
+import (
+	"fmt"
 )
 
-func main()  {
+func main() {
 
-  b := 25
-  a:= &b
-  fmt.Println(a)
-  fmt.Println(*a)
+	b := 25
+	a := &b
+	fmt.Println(a)
+	fmt.Println(*a)
 
 }

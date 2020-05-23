@@ -12,7 +12,7 @@ func main() {
 	fmt.Println(test1)
 	test1 = 10
 	fmt.Println(test1)
-	var test2 string = "test2"
+	var test2 = "test2"
 	fmt.Println(test2)
 	test2 = "re-declare test2"
 	fmt.Println(test2)

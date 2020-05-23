@@ -7,21 +7,21 @@ import (
 	"os"
 )
 
-func main()  {
-	conn,err := net.Dial("tcp","localhost:8000")
+func main() {
+	conn, err := net.Dial("tcp", "localhost:8000")
 	if err != nil {
 		log.Fatal(err)
 	}
-	done:=make(chan struct{})
+	done := make(chan struct{})
 
 	go func() {
-		io.Copy(os.Stdout,conn)
+		io.Copy(os.Stdout, conn)
 		log.Println("done")
 		done <- struct{}{}
 	}()
-	mustCopy(conn,os.Stdin)
+	mustCopy(conn, os.Stdin)
 	conn.Close()
-	<- done
+	<-done
 }
 
 func mustCopy(dst io.Writer, src io.Reader) {
