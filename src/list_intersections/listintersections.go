@@ -50,4 +50,7 @@ func main() {
 	r := intervalIntersection(A, B)
 	fmt.Println(r)
 
+	a:= "a"
+	fmt.Println(string([]rune(a)))
+
 }

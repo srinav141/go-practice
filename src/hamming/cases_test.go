@@ -50,4 +50,10 @@ var testCases = []struct {
 		0,
 		true,
 	},
+	{
+		s1:          "aüa",
+		s2:          "aaa",
+		want:        1,
+		expectError: false,
+	},
 }

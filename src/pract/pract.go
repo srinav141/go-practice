@@ -1,12 +1,12 @@
-//Package hamming implements a simple function
-//to calculate haomming distence between two
-//DNA strings
-package hamming
+package main
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
 
-// Distance retruns hamming distance of 2 strings
 func Distance(a, b string) (int, error) {
+
 
 	diffCount := 0
 	ar := []rune(a)
@@ -15,12 +15,22 @@ func Distance(a, b string) (int, error) {
 		return 0, errors.New("string lengths do not match")
 	}
 
-	for i := range ar {
+	for i := range ar{
 
 		if string(ar[i]) != string(br[i]) {
 			diffCount++
 		}
 	}
 	return diffCount, nil
+
+}
+
+func main() {
+
+	s1 := "aüa"
+	s2 := "aaa"
+
+	res,_:= Distance(s1,s2)
+	fmt.Println(res)
 
 }

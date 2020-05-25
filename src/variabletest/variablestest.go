@@ -36,6 +36,18 @@ func main() {
 	f := now.Format("01-02-2006")
 	p(f)
 
+	rt:="aüa"
+	p(len([]rune(rt)))
+
+	b := []rune(rt)
+	for i:=0;i<len(b);i++{
+		p(b[i])
+	}
+
+
+
+
+
 }
 
 func test_func(testo int) {
