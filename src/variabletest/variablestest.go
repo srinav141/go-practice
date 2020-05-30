@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 	"time"
 )
 
@@ -36,17 +37,19 @@ func main() {
 	f := now.Format("01-02-2006")
 	p(f)
 
-	rt:="aüa"
+	rt := "aüa"
 	p(len([]rune(rt)))
 
 	b := []rune(rt)
-	for i:=0;i<len(b);i++{
+	for i := 0; i < len(b); i++ {
 		p(b[i])
 	}
 
-
-
-
+	p("#####")
+	a := []int{1, 2, 3, 5, 6}
+	res := sort.SearchInts(a, 4)
+	sort.
+		p(res)
 
 }
 
